@@ -3,8 +3,6 @@ import 'package:go_router/go_router.dart';
 
 import '../../widgets/widgets.dart';
 
-
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -22,26 +20,24 @@ class _HomeScreenState extends State<HomeScreen> {
       //     IconButton(
       //       onPressed: () {
       //         context.push('/permissions');
-      //       }, 
+      //       },
       //       icon: const Icon( Icons.settings )
       //     )
       //   ],
       // ),
 
       body: Padding(
-        padding: const EdgeInsets.symmetric( horizontal: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 30),
         child: CustomScrollView(
           slivers: [
-
             SliverAppBar(
               title: const Text('Miscelaneos'),
               actions: [
                 IconButton(
-                  onPressed: () {
-                    context.push('/permissions');
-                  }, 
-                  icon: const Icon( Icons.settings )
-                )
+                    onPressed: () {
+                      context.push('/permissions');
+                    },
+                    icon: const Icon(Icons.settings))
               ],
             ),
             MainMenu()
